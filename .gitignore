@@ -31,4 +31,6 @@
 # Own entries
 build*/
 x64/
-vstest.dir
+.vs
+vstest.dir/
+screenshots/

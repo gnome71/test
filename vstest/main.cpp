@@ -1,10 +1,14 @@
-#include <QtGui>
-#include <QApplication>
-#include <QLabel>
+#include <QTextStream>
 
 int main(int argc, char **argv) {
-    QApplication app(argc, argv);
-    QLabel label("Hello, world!");
-    label.show();
-    return app.exec();
+	QVector<int> a; // Qt object
+
+	for (int i = 0; i<10; i++) {
+		a.append(i);
+	}
+
+	for (int i : a)
+		QTextStream(stdout) << "Counter: " << i;
+
+	return 0;
 }
